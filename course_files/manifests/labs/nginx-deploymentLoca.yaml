@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: rmt.example.com:5000/nginx:latest
         ports:
         - containerPort: 80
