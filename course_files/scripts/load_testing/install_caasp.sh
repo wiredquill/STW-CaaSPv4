@@ -18,7 +18,7 @@ cd my-cluster
 skuba node bootstrap --target master.example.com master01
 
 ## add worker10 as worker node
-skuba node join --role worker --target worker11.example.com worker11
+skuba node join --role worker --target worker10.example.com worker10
 
 ## add worker11 as worker node
 skuba node join --role worker --target worker11.example.com worker11
