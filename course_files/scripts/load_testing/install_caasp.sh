@@ -12,6 +12,7 @@ sudo zypper in -y kubernetes-client skuba
 skuba cluster init --control-plane master.example.com my-cluster
 
 //Bootstrap the cluster with master01 as the only master node
+cd
 cd my-cluster
 skuba node bootstrap --target master.example.com master01
 
