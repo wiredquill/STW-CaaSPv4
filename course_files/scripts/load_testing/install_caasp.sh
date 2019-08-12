@@ -9,7 +9,8 @@ sudo zypper in -y kubernetes-client skuba
 
 
 //Create the cluster config file
-cd ~
+cd
+
 skuba cluster init --control-plane master.example.com my-cluster
 
 //Bootstrap the cluster with master01 as the only master node
