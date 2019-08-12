@@ -24,3 +24,8 @@ skuba node join --role worker --target worker10.example.com worker10
 skuba node join --role worker --target worker11.example.com worker11
 
 skuba cluster status
+
+mkdir ~/.kube
+cp ~/my-cluster/admin.conf ~/.kube/config
+
+
