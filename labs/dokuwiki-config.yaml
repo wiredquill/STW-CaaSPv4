@@ -1,0 +1,4 @@
+dokuwikiPassword: password123
+serviceType: NodePort
+persistence:
+  enabled: false 
