@@ -1,8 +1,8 @@
 #!/bin/bash
 
-## load the SSh agent and Keys
-eval "$(ssh-agent -s)"eval "$(ssh-agent -s)"
-ssh-add
+## load the SSh agent and Keys *This is now done in the setup-keys.sh file
+## eval "$(ssh-agent -s)"eval "$(ssh-agent -s)"
+## ssh-add
 
 ## install skuba so you can install CaaS Platform and the kubernetes Client
 sudo zypper in -y kubernetes-client skuba
