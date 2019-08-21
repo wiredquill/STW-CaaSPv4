@@ -5,7 +5,7 @@
 ## ssh-add
 
 ## install skuba so you can install CaaS Platform and the kubernetes Client
-sudo zypper in -y kubernetes-client skuba
+sudo zypper in -y SUSE-CaaSP-Management
 
 
 ## Create the cluster config file
