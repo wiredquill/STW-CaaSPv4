@@ -7,7 +7,7 @@ kubectl create serviceaccount --namespace kube-system tiller
 
 kubectl create clusterrolebinding tiller --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
 
-helm init --tiller-image registry.suse.com/caasp/v4/helm-tiller:2.8.2 --service-account tiller
+helm init --tiller-image registry.suse.com/caasp/v4/helm-tiller:2.14.2 --service-account tiller
 
 echo sleeping for 30 secs for tiller to load
 
