@@ -18,7 +18,7 @@ cd my-cluster
 skuba node bootstrap -v5 --target master.example.com master01
 sleep 15s
 
-## add worker10 as worker node
+## add worker10 as worker nodemkd
 echo Adding worker10
 skuba node join -v5 --role worker --target worker10.example.com worker10
 sleep 15s
