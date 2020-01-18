@@ -1,0 +1,22 @@
+#
+# hosts         This file describes a number of hostname-to-address
+#               mappings for the TCP/IP subsystem.  It is mostly
+#               used at boot time, when no name servers are running.
+#               On small systems, this file can be used instead of a
+#               "named" name server.
+# Syntax:
+#
+# IP-Address  Full-Qualified-Hostname  Short-Hostname
+#
+
+127.0.0.1       localhost
+
+10.1.1.27       master1.susetech.org master1
+10.1.4.177      worker1.susetech.org  worker1
+10.1.4.61       worker2.susetech.org worker2
+10.1.1.209.    ws.susetech.org ws
+
+
+
+# special IPv6 addresses
+::1             localhost ipv6-localhost ipv6-loopback
