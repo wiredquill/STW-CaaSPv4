@@ -1,3 +1,5 @@
+#!/bin/bash
+
 scp -i  hosts ec2-user@master1.susetech.org:~ 
 scp -i  hosts ec2-user@worker1.susetech.org:~ 
 scp -i  hosts ec2-user@worker2.susetech.org:~ 
