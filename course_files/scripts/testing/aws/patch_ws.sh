@@ -10,7 +10,7 @@ ssh -i "susetech-k8s-keypair.pem" ec2-user@workstation.susetech.org "sudo cp /ho
 
 # ssh -i "susetech-k8s-keypair.pem" ec2-user@workstation.susetech.org “(sudo zypper ref &&  sudo zypper up -y && sudo cp /home/ec2-user/hosts /etc/hosts && sudo reboot) &>/dev/null &"
 
-scp -i "susetech-k8s-keypair.pem" hosts ec2-user@workstation.susetech.org:/etc/hosts
+scp -i "susetech-k8s-keypair.pem" hosts ec2-user@workstation.susetech.org:~
 ssh -i "susetech-k8s-keypair.pem" ec2-user@workstation.susetech.org "sudo cp ~/hosts /etc/hosts"
 
 
