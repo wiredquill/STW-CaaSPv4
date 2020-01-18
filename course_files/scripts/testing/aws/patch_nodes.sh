@@ -1,16 +1,16 @@
 #!/bin/bash
 
 echo master1.susetech.org
-ping -1 master1.susetech.org
-ping -1 master1
+ping -c 1 master1.susetech.org
+ping -c 1 master1
 echo .
 echo worker1.susetech.org
-ping worker1.susetech.org
-ping worker1
+ping -c 1 worker1.susetech.org
+ping -c 1 worker1
 echo .
 echo worker2.susetech.org
-ping worker2.susetech.org
-ping worker2
+ping -c 1 worker2.susetech.org
+ping -c 1 worker2
 
 read -p "Press [Enter] key to start update..."
 
