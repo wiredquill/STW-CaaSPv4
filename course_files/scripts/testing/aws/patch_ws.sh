@@ -2,8 +2,8 @@
 
 # This copies the keys to the Workstation
 
-scp -i "susetech-k8s-keypair.pem" susetech-k8s-keypair.pub ec2-user@workstation.susetech.org:/~
-scp -i "susetech-k8s-keypair.pem" susetech-k8s-keypair.pem ec2-user@workstation.susetech.org:/~
+scp -i "susetech-k8s-keypair.pem" susetech-k8s-keypair.pub ec2-user@workstation.susetech.org:~
+scp -i "susetech-k8s-keypair.pem" susetech-k8s-keypair.pem ec2-user@workstation.susetech.org:~
 
 ssh -i "susetech-k8s-keypair.pem" ec2-user@workstation.susetech.org "sudo cp /home/ec2-user/susetech-k8s-keypair.pub /home/ec2-user/.ssh/id_rsa.pub"
 ssh -i "susetech-k8s-keypair.pem" ec2-user@workstation.susetech.org "sudo cp /home/ec2-user/susetech-k8s-keypair.pem /home/ec2-user/.ssh/id_rsa"
