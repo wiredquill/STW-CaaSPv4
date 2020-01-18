@@ -11,10 +11,12 @@
 
 127.0.0.1       localhost
 
-10.1.1.27       master1.susetech.org master1
-10.1.4.177      worker1.susetech.org  worker1
-10.1.4.61       worker2.susetech.org worker2
-10.1.1.209.    ws.susetech.org ws
+3.84.18.187     workstation.susetech.org  workstation
+18.234.188.133  master.susetech.org       master
+10.1.1.30       master1.susetech.org      master1
+10.1.4.138      worker1.susetech.org      worker1
+10.1.4.59       worker2.susetech.org      worker2
+10.1.1.209      ws.susetech.org           ws
 
 
 
