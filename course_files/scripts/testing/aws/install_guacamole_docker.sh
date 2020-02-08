@@ -13,12 +13,12 @@ sudo docker pull mysql
 
 sudo docker run --rm guacamole/guacamole /opt/guacamole/bin/initdb.sh --mysql > /docker/guacamole/dbinit/guacamole_initdb.sql
 
-sudo docker run -d --name mysqldb -v /docker/guacamole/dbinit:/docker-entrypoint-initdb.d -v /docker/guacamole:/config -e MYSQL_ROOT_PASSWORD=pass@word01 -e MYSQL_DATABASE=guacamole_db -e MYSQL_USER=guacamole_user -e MYSQL_PASSWORD=some_password mysql --restart always
+sudo docker run -d --name mysqldb -v /docker/guacamole/dbinit:/docker-entrypoint-initdb.d -v /docker/guacamole:/config -e MYSQL_ROOT_PASSWORD=pass@word01 -e MYSQL_DATABASE=guacamole_db -e MYSQL_USER=guacamole_user -e MYSQL_PASSWORD=some_password mysql --restart=always
 
 
-sudo docker run --name some-guacd -d guacamole/guacd --restart always
+sudo docker run --name some-guacd -d guacamole/guacd --restart=always
 
-sudo docker run --name some-guacamole --link some-guacd:guacd --link mysqldb:mysql -e MYSQL_DATABASE=guacamole_db -e MYSQL_USER=guacamole_user -e MYSQL_PASSWORD=some_password -d -p 8080:8080 guacamole/guacamole --restart always
+sudo docker run --name some-guacamole --link some-guacd:guacd --link mysqldb:mysql -e MYSQL_DATABASE=guacamole_db -e MYSQL_USER=guacamole_user -e MYSQL_PASSWORD=some_password -d -p 8080:8080 guacamole/guacamole --restart=always
 
 #Access via ... http://docker.machine:8080/guacamole default password is guacadmin password guacadmin
 ####### END Guacamole #######
