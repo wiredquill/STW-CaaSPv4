@@ -13,7 +13,7 @@ sudo docker pull mysql
 
 sudo docker run --rm guacamole/guacamole /opt/guacamole/bin/initdb.sh --mysql > /docker/guacamole/dbinit/guacamole_initdb.sql
 
-sudo docker run -d --name mysqldb -v /docker/guacamole/dbinit:/docker-entrypoint-initdb.d -v /docker/guacamole:/config --restart=alwayse MYSQL_ROOT_PASSWORD=pass@word01 -e MYSQL_DATABASE=guacamole_db -e MYSQL_USER=guacamole_user -e MYSQL_PASSWORD=some_password mysql 
+sudo docker run -d --name mysqldb -v /docker/guacamole/dbinit:/docker-entrypoint-initdb.d -v /docker/guacamole:/config --restart=always -e MYSQL_ROOT_PASSWORD=pass@word01 -e MYSQL_DATABASE=guacamole_db -e MYSQL_USER=guacamole_user -e MYSQL_PASSWORD=some_password mysql 
 
 
 sudo docker run --name some-guacd -d --restart=always guacamole/guacd 
