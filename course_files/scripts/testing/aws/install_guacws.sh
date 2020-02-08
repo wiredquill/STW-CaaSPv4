@@ -12,3 +12,5 @@ sudo zypper in -y xrdp yast2-rpd docker
 
 sudo mkdir -p /docker/guac
 sudo chmod 777 /docker -R
+
+sudo systemctl enable --now docker
