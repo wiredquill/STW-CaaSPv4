@@ -12,6 +12,6 @@ pause
 scp -i "susetech-k8s-keypair.pem" susetech-k8s-keypair.pub ec2-user@workstation.susetech.org:/home/ec2-user/.ssh/id_rsa.pub
 
 pause
-scp -i "susetech-k8s-keypair.pem" susetech-k8s-keypair.pem ec2-user@workstation.susetech.org:/home/ec2-user/.ssh/id_rsa.pem
+scp -i "susetech-k8s-keypair.pem" susetech-k8s-keypair.pem ec2-user@workstation.susetech.org:/home/ec2-user/.ssh/id_rsa
 
 # ssh -i "susetech-k8s-keypair.pem" ec2-user@workstation.susetech.org “(sudo zypper ref &&  sudo zypper up -y && sudo cp /home/ec2-user/hosts /etc/hosts && sudo reboot) &>/dev/null &"
