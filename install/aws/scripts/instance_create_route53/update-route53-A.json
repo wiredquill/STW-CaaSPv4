@@ -1,0 +1,18 @@
+{
+  "Comment": "Update the A record set",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "test.susetech.org",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "127.0.0.1"
+          }
+        ]
+      }
+    }
+  ]
+}
